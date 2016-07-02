@@ -3,6 +3,7 @@ if ENV["GEMS_CHINA"]
 else
   source 'https://rubygems.org'
 end
+ruby '2.3.1'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
