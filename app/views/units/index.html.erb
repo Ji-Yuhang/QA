@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to 'Back Home', root_path %>
 <h1>Listing Units</h1>
 
 <table>
@@ -15,7 +16,7 @@
     <% @units.each do |unit| %>
       <tr>
         <td><%= unit.content %></td>
-        <td><%= unit.user_id %></td>
+        <td><%= unit.user.email %></td>
         <td><%= link_to 'Show', unit %></td>
         <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
         <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>

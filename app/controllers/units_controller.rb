@@ -27,6 +27,7 @@ class UnitsController < ApplicationController
     @unit = Unit.new(unit_params)
 
     respond_to do |format|
+      @unit.user = current_user
       if @unit.save
         format.html { redirect_to @unit, notice: 'Unit was successfully created.' }
         format.json { render :show, status: :created, location: @unit }
