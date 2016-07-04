@@ -62,6 +62,7 @@ GEM
     execjs (2.7.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    heredity (0.1.2)
     i18n (0.7.0)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -75,6 +76,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    middleware (0.1.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -87,6 +89,16 @@ GEM
     orm_adapter (0.5.0)
     pg (0.18.4)
     pkg-config (1.1.7)
+    protobuf (3.6.9)
+      activesupport (>= 3.2)
+      middleware
+      thor
+      thread_safe
+    protobuf-activerecord (3.3.4)
+      activerecord (>= 3.2)
+      activesupport (>= 3.2)
+      heredity (>= 0.1.1)
+      protobuf (>= 3.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -188,6 +200,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  protobuf-activerecord (~> 3.3, >= 3.3.4)
   rails (= 4.2.6)
   rails_12factor
   rspec-rails

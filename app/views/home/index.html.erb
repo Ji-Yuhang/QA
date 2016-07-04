@@ -4,4 +4,35 @@
         <td><%= user.name %></td>
         <td><%= user.email %></td>
 </tr>
+
+<% end %>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<table>
+  <thead>
+    <tr>
+      <th colspan=4>Content</th>
+      <th colspan="2"></th>
+      <th>Update Time</th>
+      <th colspan="3"></th>
+      <th colspan=5>Operation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<% @user.units.each do |unit| %> 
+  <tr>
+    <td colspan=4><%= unit.content %></td>
+    <td colspan=2></td>
+    <td colspan=2><%= unit.updated_at %></td>
+    <td><%= link_to 'Show', unit %> |</td>
+    <td><%= link_to 'Edit', edit_unit_path(unit) %> |</td>
+    <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    
+  </tr>
+</table>
 <% end %>
