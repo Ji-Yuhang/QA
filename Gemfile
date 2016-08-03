@@ -35,7 +35,13 @@ gem 'protobuf-activerecord', '~> 3.3', '>= 3.3.4'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem "therubyracer"
+gem "less-rails"
+gem 'twitter-bootstrap-rails'
 
+gem 'jquery-fileupload-rails'
+
+gem 'bootstrap-datepicker-rails'
 group :production do
   gem 'pg'
   gem 'rails_12factor'

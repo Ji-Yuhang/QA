@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :qas
   resources :units
   devise_for :users
   root to: "home#index"
